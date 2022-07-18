@@ -14,6 +14,11 @@ class Controller
             return;
         }
 
+        if (isset($_GET["action"]) && $_GET["action"] == "new") {
+            $this->new();
+            return;
+        }
+
         $this->index();
     }
 
@@ -29,5 +34,10 @@ class Controller
     public function edit()
     {
         new View('edit');
+    }
+
+    public function new()
+    {
+        new View('new');
     }
 }

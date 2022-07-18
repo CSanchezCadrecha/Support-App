@@ -13,6 +13,23 @@ class Controller
             $this->edit();
             return;
         }
+        if (isset($_GET["action"]) && $_GET["action"] === "about") {
+            $this->about();
+            return;
+        }
+        if (isset($_GET["action"]) && $_GET["action"] === "create") {
+            $this->create();
+            return;
+        }
+        if (isset($_GET["action"]) && $_GET["action"] === "store") {
+            $this->store();
+            return;
+        }
+        if (isset($_GET["action"]) && $_GET["action"] === "delete") {
+            $id = $_GET['id']
+            $this->destroy($id);
+            return;
+        }
 
         $this->index();
     }
@@ -31,3 +48,4 @@ class Controller
         new View('edit');
     }
 }
+

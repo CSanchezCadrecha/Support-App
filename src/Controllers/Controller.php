@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 use App\Core\View;
 
-class Controller {
-    
+class Controller
+{
+
     public function __construct()
     {
         $this->index();
@@ -18,5 +19,14 @@ class Controller {
         ];
 
         new View('home', $data);
+    }
+    
+    public function nueva()
+    {
+        $data = [
+            "name" => "ale",
+        ];
+
+        new View("nueva-solicitud", $data);
     }
 }

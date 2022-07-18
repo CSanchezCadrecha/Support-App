@@ -12,7 +12,7 @@
     <i class="fa-solid fa-pen-to-square"></i>
     <?php 
        var_dump($data);
-        
+
         foreach ($data as $key => $value) {
             $html = <<<HTML
                 <div>

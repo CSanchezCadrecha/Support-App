@@ -8,22 +8,11 @@
     <script src="https://kit.fontawesome.com/4029e392d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Fem Desk</h1>
+    <h1>Nueva solicituda ejem</h1>
+    
     <i class="fa-solid fa-pen-to-square"></i>
     <?php 
        var_dump($data);
-        
-        foreach ($data as $key => $value) {
-            $html = <<<HTML
-                <div>
-                    $key . ':' . $value
-                </div>
-            HTML;
-
-            echo $html;
-        }
-
-        echo "home sweet home. Hello {$data['name']}." 
 
     ?>
 

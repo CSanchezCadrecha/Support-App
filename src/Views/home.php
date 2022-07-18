@@ -7,38 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src\css\style.css">
     <title>Home</title>
 </head>
 
 <body>
     <h1>Home View</h1>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <img id="logo-img" class="shadow bg-white rounded" src="src/assets/logo.png" alt="imagen logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="logo">
-                    <img src="../assets/logo.png" alt="imagen logo">
-                </div>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?action=edit">Editar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?action=new">Nueva Solicitud</a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="?action=edit">Editar</a>
+                        <a class="nav-link" href="?action=new">Nueva Solicitud</a>
+                    </div>
                 </div>
             </div>
-
         </nav>
-
     </header>
+
+    <main>
+        <div>
+            <h3>Listado Solicitudes</h3>
+            <h5>Tabla</h5>
+            <div id="list"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="d-flex justify-content-center">
+            <h6>©2022 FEM Desk</h6>
+        </div>
+    </footer>
 
     <?php
     // var_dump($data);

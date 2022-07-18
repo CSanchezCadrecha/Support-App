@@ -9,6 +9,11 @@ class Controller
 
     public function __construct()
     {
+        if (isset($_GET["action"]) && $_GET["action"] == "edit") {
+            $this->edit();
+            return;
+        }
+
         $this->index();
     }
 
@@ -20,13 +25,9 @@ class Controller
 
         new View('home', $data);
     }
-    
-    public function nueva()
-    {
-        $data = [
-            "name" => "ale",
-        ];
 
-        new View("nueva-solicitud", $data);
+    public function edit()
+    {
+        new View('edit');
     }
 }

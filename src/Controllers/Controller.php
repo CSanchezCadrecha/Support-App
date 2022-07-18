@@ -4,10 +4,16 @@ namespace App\Controllers;
 
 use App\Core\View;
 
-class Controller {
-    
+class Controller
+{
+
     public function __construct()
     {
+        if (isset($_GET["action"]) && $_GET["action"] == "edit") {
+            $this->edit();
+            return;
+        }
+
         $this->index();
     }
 
@@ -18,5 +24,10 @@ class Controller {
         ];
 
         new View('home', $data);
+    }
+
+    public function edit()
+    {
+        new View('edit');
     }
 }

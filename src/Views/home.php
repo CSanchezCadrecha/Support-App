@@ -9,7 +9,6 @@
 <body>
     <h1>Home View</h1>
     <a href="?action=edit">Editar</a>
-
     <?php 
        // var_dump($data);
 

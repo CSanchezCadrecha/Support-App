@@ -1,0 +1,22 @@
+{
+  "name": "support-app",
+  "version": "1.0.0",
+  "description": "Repository for create a MVC project with PHP. This repository does not have a router.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSanchezCadrecha/Support-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSanchezCadrecha/Support-App/issues"
+  },
+  "homepage": "https://github.com/CSanchezCadrecha/Support-App#readme"
+}

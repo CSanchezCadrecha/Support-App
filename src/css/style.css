@@ -4,13 +4,11 @@
 
 main{
     background-image: url(../assets/background.webp);
-    
 }
 
 nav, footer{
     background-color: #f5db8c;
 }
-
 
 #list{
     width: 1000px;
